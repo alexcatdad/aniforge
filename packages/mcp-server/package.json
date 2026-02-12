@@ -1,0 +1,16 @@
+{
+  "name": "@anime-rag/mcp-server",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": { "anime-rag-mcp": "./dist/cli.js" },
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "scripts": { "build": "tsc", "typecheck": "tsc --noEmit", "test": "bun test" },
+  "dependencies": {
+    "@anime-rag/core": "workspace:*",
+    "@anime-rag/embed": "workspace:*",
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": { "typescript": "^5.7.3" }
+}

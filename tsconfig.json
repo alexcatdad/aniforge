@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {
+      "@anime-rag/core": ["./packages/core/src"],
+      "@anime-rag/embed": ["./packages/embed/src"],
+      "@anime-rag/ingest": ["./packages/ingest/src"],
+      "@anime-rag/reconcile": ["./packages/reconcile/src"],
+      "@anime-rag/enrich": ["./packages/enrich/src"],
+      "@anime-rag/build": ["./packages/build/src"],
+      "@anime-rag/orchestrator": ["./packages/orchestrator/src"],
+      "@anime-rag/mcp-server": ["./packages/mcp-server/src"]
+    }
+  },
+  "files": []
+}

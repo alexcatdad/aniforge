@@ -1,0 +1,19 @@
+{
+  "name": "aniforge",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --build",
+    "test": "bun test",
+    "build": "tsc --build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "bun-types": "^1.2.0",
+    "typescript": "^5.7.3"
+  }
+}

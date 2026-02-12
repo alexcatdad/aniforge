@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": { "outDir": "./dist", "rootDir": "./src" },
+  "include": ["src/**/*"],
+  "references": [
+    { "path": "../core" },
+    { "path": "../ingest" },
+    { "path": "../reconcile" },
+    { "path": "../enrich" },
+    { "path": "../embed" },
+    { "path": "../build" }
+  ]
+}
